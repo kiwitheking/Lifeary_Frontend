@@ -1,0 +1,99 @@
+/* Typography */
+body {
+  font-family: 'Arial, sans-serif';
+}
+
+/* Modal Base Styling */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 320px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-container div {
+  margin-bottom: 10px;
+}
+
+.modal-container div.instruction {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.select-style {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  appearance: none;
+  background-color: #f8f8f8;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="black" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+  background-size: 0.65em auto;
+  transition: all 0.3s ease;
+}
+
+.select-style:hover {
+  border-color: #888;
+}
+
+.select-style:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.modal-buttons-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-button:hover {
+  transform: scale(1.05); 
+}
+
+.modal-button:active {
+  transform: scale(0.95);
+}
+
+.modal-button:not(.close) {
+  background-color: #007BFF;
+  color: white;
+}
+
+.modal-button:not(.close):hover {
+  background-color: #0056b3;
+}
+
+.modal-button.close {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-button.close:hover {
+  background-color: #d32f2f;
+}
